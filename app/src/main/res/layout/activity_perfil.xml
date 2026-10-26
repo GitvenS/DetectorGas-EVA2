@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/blanco" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="23dp" android:paddingRight="23dp" android:paddingTop="26dp" android:paddingBottom="30dp">
+        <TextView android:id="@+id/lblusuario" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center" android:text="Cargando usuario..." android:textColor="#122A6C" android:textStyle="bold" android:textSize="22sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center" android:text="Ver Perfil" android:textColor="#101216" android:textStyle="bold" android:textSize="25sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:orientation="vertical" android:background="@drawable/tarjeta" android:padding="14dp">
+            <TextView android:id="@+id/lblrut" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:gravity="left" android:text="Rut: 11.111.111-1" android:textColor="#111111" android:textSize="16sp" />
+            <TextView android:id="@+id/lblnombre" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="left" android:text="Nombre: Usuario" android:textColor="#111111" android:textSize="16sp" />
+            <TextView android:id="@+id/lblapellido" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="left" android:text="Apellido: Demo" android:textColor="#111111" android:textSize="16sp" />
+            <TextView android:id="@+id/lblcorreo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="left" android:text="Correo: demo@ejemplo.cl" android:textColor="#111111" android:textSize="16sp" />
+            <TextView android:id="@+id/lblcargo" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="left" android:text="Cargo: Operador" android:textColor="#111111" android:textSize="16sp" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="left" android:text="Contraseña: protegida por Firebase" android:textColor="#111111" android:textSize="16sp" />
+        </LinearLayout>
+        <Button android:id="@+id/btnvolver" android:layout_width="match_parent" android:layout_height="49dp" android:layout_marginTop="26dp" android:background="@drawable/boton_rojo" android:backgroundTint="@null" android:text="Volver" android:textAllCaps="false" android:textColor="@color/blanco" android:textSize="15sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:gravity="center" android:text="Datos del usuario con sesión iniciada." android:textColor="#666666" android:textSize="12sp" />
+    </LinearLayout>
+</ScrollView>

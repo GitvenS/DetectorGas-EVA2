@@ -1,0 +1,8 @@
+<resources>
+    <color name="negro">#101216</color>
+    <color name="rojo">#B90000</color>
+    <color name="azul">#122A6C</color>
+    <color name="gris">#F1F2F5</color>
+    <color name="blanco">#FFFFFF</color>
+    <color name="texto_secundario">#666666</color>
+</resources>

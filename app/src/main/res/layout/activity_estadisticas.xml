@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/blanco">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="23dp">
+        <TextView android:id="@+id/lblusuario" android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:gravity="center" android:text="Cargando usuario..." android:textColor="#122A6C"
+            android:textStyle="bold" android:textSize="22sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="9dp"
+            android:gravity="center" android:text="Estadísticas" android:textColor="#101216"
+            android:textStyle="bold" android:textSize="25sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp"
+            android:gravity="center" android:text="Datos calculados de eventos de Firebase"
+            android:textColor="#666666" android:textSize="13sp" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginTop="20dp" android:orientation="vertical" android:background="@drawable/tarjeta"
+            android:padding="15dp">
+            <TextView android:id="@+id/lblActivaciones" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:text="Monitoreos activados: 0" android:textColor="#202020" android:textSize="16sp" />
+            <TextView android:id="@+id/lblDesactivaciones" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="13dp" android:text="Monitoreos desactivados: 0" android:textColor="#202020" android:textSize="16sp" />
+            <TextView android:id="@+id/lblFugas" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="13dp" android:text="Fugas simuladas detectadas: 0" android:textColor="#202020" android:textSize="16sp" />
+            <TextView android:id="@+id/lblCierres" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="13dp" android:text="Cierres virtuales de compuerta: 0" android:textColor="#202020" android:textSize="16sp" />
+            <TextView android:id="@+id/lblNormales" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="13dp" android:text="Retornos a estado normal: 0" android:textColor="#202020" android:textSize="16sp" />
+            <TextView android:id="@+id/lblTotal" android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginTop="13dp" android:text="Total de acciones registradas: 0" android:textColor="#202020" android:textSize="16sp" />
+        </LinearLayout>
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp"
+            android:gravity="center" android:text="Valores de simulación; el sensor ESP32 real no está conectado"
+            android:textColor="#666666" android:textSize="12sp" />
+        <Button android:id="@+id/btnvolver" android:layout_width="match_parent" android:layout_height="50dp"
+            android:layout_marginTop="18dp" android:background="@drawable/boton_rojo" android:backgroundTint="@null"
+            android:text="Volver" android:textAllCaps="false" android:textColor="@color/blanco" />
+    </LinearLayout>
+</ScrollView>

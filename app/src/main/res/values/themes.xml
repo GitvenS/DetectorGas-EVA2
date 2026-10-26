@@ -1,0 +1,10 @@
+<resources>
+    <style name="Theme.DetectorGas" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar">true</item>
+        <item name="android:statusBarColor">@color/blanco</item>
+        <item name="android:navigationBarColor">@color/blanco</item>
+        <item name="android:windowLightNavigationBar">true</item>
+        <item name="colorPrimary">@color/azul</item>
+        <item name="android:fontFamily">sans</item>
+    </style>
+</resources>

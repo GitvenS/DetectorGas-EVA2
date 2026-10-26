@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/blanco" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="23dp" android:paddingRight="23dp" android:paddingTop="26dp" android:paddingBottom="30dp">
+        <Space android:layout_width="1dp" android:layout_height="25dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:gravity="center" android:text="Login" android:textColor="#101216" android:textStyle="bold" android:textSize="27sp" />
+        <Space android:layout_width="1dp" android:layout_height="14dp" />
+        <EditText android:id="@+id/txtusu" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:background="@drawable/campo" android:gravity="center" android:singleLine="true" android:inputType="textEmailAddress" android:hint="Correo electrónico" android:textSize="15sp" android:padding="8dp" android:textColorHint="#555555" android:textColor="#111111" />
+        <EditText android:id="@+id/txtcon" android:layout_width="match_parent" android:layout_height="50dp" android:layout_marginTop="10dp" android:background="@drawable/campo" android:gravity="center" android:singleLine="true" android:inputType="textPassword" android:hint="Contraseña" android:textSize="15sp" android:padding="8dp" android:textColorHint="#555555" android:textColor="#111111" />
+        <Button android:id="@+id/btnini" android:layout_width="match_parent" android:layout_height="49dp" android:layout_marginTop="18dp" android:background="@drawable/boton_negro" android:backgroundTint="@null" android:text="Iniciar Sesión" android:textAllCaps="false" android:textColor="@color/blanco" android:textSize="15sp" />
+        <Button android:id="@+id/btncre" android:layout_width="match_parent" android:layout_height="49dp" android:layout_marginTop="10dp" android:background="@drawable/boton_negro" android:backgroundTint="@null" android:text="Crear Cuenta" android:textAllCaps="false" android:textColor="@color/blanco" android:textSize="15sp" />
+        <Space android:layout_width="1dp" android:layout_height="24dp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="0dp" android:gravity="center" android:text="Detector de gas · EVA2" android:textColor="#122A6C" android:textSize="14sp" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:gravity="center" android:text="Login y registro mediante Firebase" android:textColor="#666666" android:textSize="13sp" />
+    </LinearLayout>
+</ScrollView>
