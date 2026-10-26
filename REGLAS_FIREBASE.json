@@ -1,0 +1,36 @@
+{
+  "rules": {
+    "usuarios": {
+      "$uid": {
+        ".read": "auth != null && auth.uid === $uid",
+        ".write": "auth != null && auth.uid === $uid",
+        ".validate": "newData.hasChildren(['rut', 'nombre', 'apellido', 'correo', 'cargo'])",
+        "rut": {
+          ".validate": "newData.isString()"
+        },
+        "nombre": {
+          ".validate": "newData.isString()"
+        },
+        "apellido": {
+          ".validate": "newData.isString()"
+        },
+        "correo": {
+          ".validate": "newData.isString()"
+        },
+        "cargo": {
+          ".validate": "newData.isString()"
+        },
+        "simulacion": {
+          "estado": {
+            ".validate": "newData.hasChildren(['monitoreo', 'fuga', 'actualizado']) && newData.child('monitoreo').isBoolean() && newData.child('fuga').isBoolean() && newData.child('actualizado').isNumber()"
+          },
+          "eventos": {
+            "$evento": {
+              ".validate": "newData.hasChildren(['accion', 'detalle', 'usuario', 'fecha']) && newData.child('accion').isString() && newData.child('detalle').isString() && newData.child('usuario').isString() && newData.child('fecha').isNumber()"
+            }
+          }
+        }
+      }
+    }
+  }
+}
